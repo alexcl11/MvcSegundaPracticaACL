@@ -1,0 +1,15 @@
+﻿@model Comic
+<h1>Detalles Comic</h1>
+<br />
+<hr />
+<br />
+
+<a asp-action="Index" asp-controller="Comics">Volver al Home</a>
+<div class="container">
+    <div class="col-3">
+        <h3>ID: @Model.IdComic</h3>
+        <img src=@Model.Imagen style="width: 200px; heigth: 300px" />
+        <h5>Nombre: @Model.Nombre</h5>
+        <p>Descripcion: @Model.Descripcion</p>
+    </div>
+</div>
